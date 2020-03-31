@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #b71540;
+  font-family: "Lato", sans-serif;
+  color: rgb(12, 8, 8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.containerfull {
+  background-color: #2c3e50;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 330px;
+  perspective: 1000px;
+}
+.movie-container {
+  background-color: #0a3d62;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  /* margin-left: 10px; */
+  padding: 5px 5px 5px 5px;
+}
+/* #movie {
+  padding: 5px;
+} */
+.seat {
+  background-color: rgb(255, 255, 255);
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+}
+.seat.selected {
+  background-color: #78e08f;
+}
+.seat.occupied {
+  background-color: rgb(192, 25, 13);
+}
+.movieList {
+  width: 170px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0 10px 0 10px;
+}
+.container1 {
+  background-color: #2c3e50;
+  display: block;
+  left: 85px;
+  width: 50%;
+  /* height: 150px; */
+  position: relative;
+  margin-bottom: 30px;
+}
+.text {
+  margin: 20px 40px 20px 80px;
+  font-weight: 800;
+}
+.showcase {
+  display: flex;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.screen {
+  background-color: #ffff;
+  height: 75px;
+  width: 95%;
+  padding: 15px;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgb(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.text.count {
+  font-size: large;
+  color: rgb(46, 75, 139);
+}
